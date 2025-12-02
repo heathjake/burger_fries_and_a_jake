@@ -1,0 +1,234 @@
+<!-- ========================================================
+  SINGLE BURGER REVIEW PAGE - OUTRUN STYLE (with Comments)
+======================================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="C:/Users/polar/Documents/Website/global_style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheeseburger Supreme - Burger, Fries, and a Jake</title>
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      min-height: 100vh;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header img.header-img {
+      display: block;
+      margin: 0 auto 1rem auto;
+    }
+    .review-detail {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #ff00ff80;
+      text-align: center;
+    }
+    h2 {
+      color: #00ffff;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .rating {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .notes img.float-left {
+      float: left;
+      width: 40%;
+      margin: 0 1rem 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    .images-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+    .images-container img {
+      width: 40%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    .tag {
+      display: inline-block;
+      background: #ff00ff;
+      padding: 0.3rem 0.8rem;
+      margin: 0.2rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      color: white;
+    }
+
+    /* COMMENT SECTION */
+    .comments-box {
+      margin-top: 3rem;
+      max-width: 700px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(0,0,0,0.3);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffff50;
+    }
+    .comments-box h3 {
+      margin-top: 0;
+      color: #00ffff;
+    }
+    .comment {
+      background: rgba(255,255,255,0.1);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px #ff00ff40;
+    }
+    .comment small {
+      display: block;
+      opacity: 0.7;
+      margin-top: 0.5rem;
+    }
+    .delete-comment {
+      background: #ff0044;
+      color: white;
+      border: none;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.7rem;
+      border-radius: 6px;
+      float: right;
+      cursor: pointer;
+    }
+
+    .comment-form textarea,
+    .comment-form input {
+      width: 96.5%;
+      margin-bottom: 1rem;
+      padding: 0.7rem;
+      border-radius: 10px;
+      border: none;
+    }
+    .comment-form button {
+      background: #00ffff;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="C:/Users/polar/Documents/Website/LOGO_FILES/toplogo.png" alt="Burger, Fries, and a Jake" class="header-img">
+    <p style="text-align:center;">Reviewing the best (and worst) burgers in PDX and beyond🍔!</p>
+  </header>
+
+  <main style="max-width:700px;">
+    <h2>Sure Shot</h2>
+    <p class="rating">⭐ 8.0/10</p>
+
+    <p>Welcome all to the first post of the blog! We are starting with a banger here at <i>Sure Shot Burger</i>, a smashburger patty foodcart up in Northeast Portland at 5013 Ne 42nd ave. 
+      They serve the standard style of smashburger, consisting of just a patty, pickles, onion, melted american cheese (thank fucking god), and homemade boirgur sauce! As a fan of the classic, 
+      I was really looking forward to trying this place out. It even has the Oakshire Pub right next door while you wait for your order. Excellent option considering how miserable it can get here in PDX
+      around the holidays.</p>
+    <p>The food cart itself is </p>
+    
+    <p>  
+      I heard about Sure Shot from a
+      a buddy of mine who knew about the (makings of) this burger blog and suggested it to me. Boy, oh boy, am I glad he did. I'll start off the review by stating this is likely in my top three burgers in
+      the PDX region. Quite the heavy burger!
+    </p>
+
+    <div class="tags">
+      <span class="tag">classic</span>
+      <span class="tag">cheeseburger</span>
+      <span class="tag">smashburger</span>
+    </div>
+
+    <div class="images-container">
+      <img src="C:/Users/polar/Documents/Website/reviews/sure_shot/images/sure_shot_burger.jpg" alt="Double">
+    </div>
+
+    <a href="C:/Users/polar/Documents/Website/burgers_fries_and_a_jake.html" class="back-link">← Back to Reviews</a>
+
+    <!-- COMMENT SECTION -->
+    <div class="comments-box">
+      <h3>Comments</h3>
+      <div id="comments-list"></div>
+
+      <form class="comment-form" id="commentForm">
+        <input type="text" id="commentName" placeholder="Your name" required>
+        <textarea id="commentText" rows="4" placeholder="Write your comment..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    // Unique key for localStorage for THIS review
+    const reviewKey = 'comments_sureshot';
+
+    function loadComments() {
+      const saved = localStorage.getItem(reviewKey);
+      const comments = saved ? JSON.parse(saved) : [];
+      const list = document.getElementById('comments-list');
+      list.innerHTML = '';
+
+      comments.forEach((c, index) => {
+        const div = document.createElement('div');
+        div.className = 'comment';
+        div.innerHTML = `
+          <strong>${c.name}</strong><br>
+          ${c.text}
+          <small>${c.date}</small>
+          <button class="delete-comment" onclick="deleteComment(${index})">Delete</button>
+        `;
+        list.appendChild(div);
+      });
+    }
+
+    function deleteComment(i) {
+      const saved = JSON.parse(localStorage.getItem(reviewKey));
+      saved.splice(i, 1);
+      localStorage.setItem(reviewKey, JSON.stringify(saved));
+      loadComments();
+    }
+
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('commentName').value;
+      const text = document.getElementById('commentText').value;
+
+      const newComment = {
+        name,
+        text,
+        date: new Date().toLocaleString()
+      };
+
+      const saved = localStorage.getItem(reviewKey);
+      const comments = saved ? JSON.parse(saved) : [];
+      comments.push(newComment);
+
+      localStorage.setItem(reviewKey, JSON.stringify(comments));
+      this.reset();
+      loadComments();
+    });
+
+    loadComments();
+  </script>
+</body>
+</html>
