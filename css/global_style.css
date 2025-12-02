@@ -1,0 +1,143 @@
+/* === Global Burger Blog Theme === */
+/* Remove all default spacing */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header image styling */
+header {
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(90deg, #ff007f, #4400ff);
+  color: white;
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+/* Make image touch edges exactly */
+.header-img {
+  display: block;
+  width: 75%;
+  height: auto;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  object-fit: cover;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at top, rgba(18, 0, 47, 0.9), rgba(5, 0, 16, 0.95) 100%), 
+              url('C:/Users/polar/Documents/Website/LOGO_FILES/Background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #00ffff;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    color: #ffe6ff;
+    text-shadow: 0 0 5px #ff80ff;
+}
+
+.filter-bar {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.filter-bar input {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 250px;
+    box-shadow: 0 0 5px #00ffff;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+.tag {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    border-radius: 12px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 8px #ff00ff;
+}
+
+.tag.active {
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    box-shadow: 0 0 12px #00ffff;
+}
+
+#reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.review-card {
+    background: rgba(40, 0, 70, 0.9);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 0 15px #7a00ff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #ff00ff;
+}
+
+.review-card img {
+    width: 25%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.review-card h3 {
+    color: #ff80ff;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+.review-card p {
+    margin: 0.3rem 0;
+    color: #e0d6ff;
+}
+
+a:link {
+  color: #ff00ea;   /* normal link */
+}
+
+a:visited {
+  color: rgb(179, 1, 1);
+}
