@@ -1,23 +1,8 @@
 <!-- ========================================================
   ABOUT ME PAGE - OUTRUN STYLE (HEADER MATCHES REVIEW PAGE)
 ======================================================== -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me - Burger, Fries, and a Jake</title>
-  <link rel="stylesheet" href="https://heathjake.github.io/burger_fries_and_a_jake/css/global_style.css">
 
-  <style>
-    /* === About Me Page Specific Styles === */
-    header p{
-      font-size: 3.25rem;
-      color: #ffe6ff;
-      text-shadow: 0 0 30px #ff80ff;
-    }
-
-    .about-container {
+<!--    .about-container {
       max-width: 50%;
       margin: 0 auto 2rem auto;   
       text-align: center;
@@ -48,11 +33,7 @@
       margin: 1rem 0;
     }
 
-    .about-container figcaption {
-      font-size: 4rem; 
-      color: #ff009d;
-      text-shadow: 0 0 30px #ff009d;
-    }
+
 
     a.back-link {
       font-size: 4.2rem;
@@ -61,8 +42,78 @@
       text-decoration: none;
       margin-top: 2rem;
       display: inline-block;
-    }
+    }-->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://heathjake.github.io/burger_fries_and_a_jake/css/global_style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheeseburger Supreme - Burger, Fries, and a Jake</title>
+  <style>
+   
+    .review-detail {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #ff00ff80;
+      text-align: center;
+    }
+    h2 {
+      color: #00ffff;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .rating {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .float-left {
+      float: left;
+      margin: 0 1rem 1rem 0;
+      max-width: 40%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    .float-right {
+      float: right;
+      margin: 0 0 1rem 1rem;
+      max-width: 40%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    .images-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+    .images-container img {
+      width: 40%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    .rating-container figcaption {
+      font-size: 4rem; 
+      color: #ff009d;
+      text-shadow: 0 0 30px #ff009d;
+    }
+    .tag {
+      display: inline-block;
+      background: #ff00ff;
+      padding: 0.3rem 0.8rem;
+      margin: 0.2rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      color: white;
+    }
     .rainbow-text {
       background: linear-gradient(to bottom, red, yellow, blue, indigo, violet);
       -webkit-background-clip: text;
@@ -76,18 +127,15 @@
     }
   </style>
 </head>
-
 <body>
-  <!-- === Header (Matches Review Page) === -->
   <header>
     <img src="https://heathjake.github.io/burger_fries_and_a_jake/LOGO_FILES/toplogo.png" 
          alt="Burger, Fries, and a Jake" class="header-img">
     <p>Reviewing the best (and worst) burgers in PDX and beyond🍔!</p>
   </header>
 
-  <!-- === Main About Me Content === -->
-  <main class="about-container">
-    <div class="about-card">
+  <main style="max-width:700px; margin: 0 auto;">
+     <!-- === Main About Me Content === -->
     <h2>About Me</h2>
 
     <p>Hello burger enthusiasts! I'm Jake, the voice behind "Burger, Fries, and a Jake." I started this blog to document my burger adventures, share my thoughts, work on my web development, and consume as many calories as possible in a single sitting.</p>
@@ -115,9 +163,6 @@
         <figcaption>The bozo in all his glory</figcaption>
       </figure>  
     </div>
-
-    <a href="https://heathjake.github.io/burger_fries_and_a_jake/index.html" class="back-link">← Back to Reviews</a>
-    </div>
-  </main>
+    <a href="https://heathjake.github.io/burger_fries_and_a_jake/index.html" class="back-link">← Back to Reviews</a>    
 </body>
 </html>
