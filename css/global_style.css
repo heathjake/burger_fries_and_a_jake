@@ -143,18 +143,18 @@ a:visited {
   color: rgb(179, 1, 1);
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   header {
-    padding: 1rem 0.5rem;   /* Much smaller padding */
+    padding: 1rem 0.5rem;   /* Much smaller padding 
   }
   .header-img {
     width: 100%;
-    max-width: 400px;       /* Now this actually matters */
+    max-width: 400px;       /* Now this actually matters 
   }
   header p {
-    font-size: 0.75rem;   /* Slightly smaller sub-header text */
-    line-height: 1.2;     /* Keeps it tidy */
+    font-size: 0.75rem;   /* Slightly smaller sub-header text 
+    line-height: 1.2;     /* Keeps it tidy 
   }
-}
+} */
 
 
