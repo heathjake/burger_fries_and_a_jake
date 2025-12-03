@@ -146,7 +146,6 @@ a:visited {
 @media (max-width: 600px) {
   .header-img {
     width: 100%;
-    max-width: 200px;
   }
 }
 
