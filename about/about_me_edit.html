@@ -1,130 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me - Burger, Fries, and a Jake</title>
-  <link rel="stylesheet" href="https://heathjake.github.io/burger_fries_and_a_jake/css/global_style.css">
-  
-  <style>
-    /* === About Me Page Styles Using Review Page Grid === */
-    #reviews {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-    }
+<!-- ========================================================
+  ABOUT ME PAGE - OUTRUN STYLE (HEADER MATCHES REVIEW PAGE)
+======================================================== -->
 
-    .about-card {
-      background: transparent;  /* invisible */
-      box-shadow: none;
-      border-radius: 15px;
-      padding: 1.5rem;          /* same as review-card padding */
-      font-size: 1.25rem;       /* match review-card font */
+<!--    .about-container {
+      max-width: 50%;
+      margin: 0 auto 2rem auto;   
+      text-align: center;
+      font-size: 4.5rem;   /* larger text */
       line-height: 1.8;
     }
 
-    .about-card h2 {
-      font-size: 2.5rem;
-      text-align: center;
+    .about-container h2 {
+      font-size: 4.5rem;  
+      margin-bottom: 1rem;
       color: #00ffff;
+      text-shadow: 0 0 30px #00ffff;
+    }
+
+    .about-container p {
       margin-bottom: 1rem;
     }
 
-    .about-card p {
-      margin-bottom: 1rem;
-    }
-
-    .about-card figure {
+    .about-container figure {
       margin: 1rem 0;
       text-align: center;
     }
 
-    .about-card img {
-      width: 40%;
-      display: block;
-      margin: 1rem auto;
+    .about-container img {
+      width: 40%;       /* bigger images */
+      border-radius: 20px;
+      box-shadow: 0 0 10px #00ffff;
+      margin: 1rem 0;
+    }
+
+
+
+    a.back-link {
+      font-size: 4.2rem;
+      color: #00ffff;
+      text-shadow: 0 0 30px #00ffff;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: inline-block;
+    }-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://heathjake.github.io/burger_fries_and_a_jake/css/global_style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheeseburger Supreme - Burger, Fries, and a Jake</title>
+  <style>
+   
+    .review-detail {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #ff00ff80;
+      text-align: center;
+    }
+    h2 {
+      color: #00ffff;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .rating {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .float-left {
+      float: left;
+      margin: 0 1rem 1rem 0;
+      max-width: 40%;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 0 10px #00ffff;
     }
-
-    .about-card figcaption {
-      font-size: 1rem;
-      color: #ff009d;
-      text-align: center;
+    .float-right {
+      float: right;
+      margin: 0 0 1rem 1rem;
+      max-width: 40%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff;
     }
-
+    .images-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+    .images-container img {
+      width: 40%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    .rating-container figcaption {
+      font-size: 4rem; 
+      color: #ff009d;
+      text-shadow: 0 0 30px #ff009d;
+    }
+    .tag {
+      display: inline-block;
+      background: #ff00ff;
+      padding: 0.3rem 0.8rem;
+      margin: 0.2rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      color: white;
+    }
     .rainbow-text {
-      font-size: 1.5em;
-      font-weight: 900;
-      background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+      background: linear-gradient(to bottom, red, yellow, blue, indigo, violet);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 3px #fff;
-    }
-
-    a.back-link {
-      font-size: 1.2rem;
-      color: #00ffff;
-      text-decoration: none;
+      font-weight: 900;
+      font-size: 1em;
       display: inline-block;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .about-card img {
-        width: 70%;
-      }
-      .about-card {
-        padding: 1rem;
-        font-size: 1.1rem;
-      }
-      .about-card h2 {
-        font-size: 2rem;
-      }
+      background-size: 100% 50%;
+      background-position: 0 -100%;
+      filter: drop-shadow(0 0 20px rgba(255,255,255,0.8));
     }
   </style>
 </head>
-
 <body>
-  <!-- Header identical to Review page -->
   <header>
     <img src="https://heathjake.github.io/burger_fries_and_a_jake/LOGO_FILES/toplogo.png" 
          alt="Burger, Fries, and a Jake" class="header-img">
     <p>Reviewing the best (and worst) burgers in PDX and beyond🍔!</p>
   </header>
 
-  <!-- Use Review page grid container -->
-  <main id="reviews">
-    <div class="about-card">
-      <h2>About Me</h2>
+  <main style="max-width:700px; margin: 0 auto;">
+     <!-- === Main About Me Content === -->
+    <h2>About Me</h2>
 
-      <p>Hello burger enthusiasts! I'm Jake, the voice behind "Burger, Fries, and a Jake." I started this blog to document my burger adventures, share my thoughts, work on my web development, and consume as many calories as possible in a single sitting.</p>
+    <p>Hello burger enthusiasts! I'm Jake, the voice behind "Burger, Fries, and a Jake." I started this blog to document my burger adventures, share my thoughts, work on my web development, and consume as many calories as possible in a single sitting.</p>
 
-      <figure>
-        <img src="https://heathjake.github.io/burger_fries_and_a_jake/images/selfie.PNG" alt="Handsome Devil">
-        <figcaption>Ain't he a beaut?</figcaption>
-      </figure>
+    <figure>
+      <img src="https://heathjake.github.io/burger_fries_and_a_jake/images/selfie.PNG" alt="Handsome Devil">
+      <figcaption>Ain't he a beaut?</figcaption>
+    </figure>
 
-      <p>While I'm much better at eating burgers than reviewing them, I hope you can glean some information about these scrumptious semi-sandwiches, and enjoy your time on this goofy-ass site.</p>
+    <p>While I'm much better at eating burgers than reviewing them, I hope you can glean some information about these scrumptious semi-sandwiches, and enjoy your time on this goofy-ass site. </p>
 
-      <p>The mission here is simple: review burgers in an unprofessional and frequently crass style while also providing an opportunity for me to work on web design. Based on that, I'd like to reiterate that this blog is all in good fun and not to be taken too seriously. 
-        If I dunk on your favorite burger, don't sweat it! Just remember that either you have terrible taste or it's just different!</p>
+    <p>The mission here is simple: review burgers in an unprofessional and frequently crass style while also providing an opportunity for me to work on web design. Based on that, I'd like to reiterate that this blog is all in good fun and not to be taken too seriously. 
+      If I dunk on your favorite burger, don't sweat it! Just remember that either you have terrible taste or it's just different!</p>
 
-      <p>And just to be crystal clear, reviews here won't follow any sort of style or particular rubric outside of my stream of consciousness (or <span class="rainbow-text">VIBE</span>!), so take it easy and have fun!</p>
+    <p>And just to be crystal clear, reviews here won't follow any sort of style or particular rubric outside of my stream of consciousness (or <span class="rainbow-text">VIBE</span>!), so take it easy and have fun!</p>
 
-      <p>Lastly, this blog is a <b>work-in-progress</b>. If you see anything weird or have issues, please contact me either in the comments of a review page or at my e-mail (coming soon!)</p>
+    <p>Lastly, this blog is a <b>work-in-progress</b>. If you see anything weird or have issues, please contact me either in the comments of a review page or at my e-mail (coming soon!). There will also be an updates page at somepoint, who knows when!</p>
 
-      <p>Obligatory dog picks:</p>
+    <p>Obligatory dog picks:</p>
 
+    <div class="images-container">
       <figure>
         <img src="https://heathjake.github.io/burger_fries_and_a_jake/images/weed_max.jpg" alt="Max be high af off dat bone">
         <img src="https://heathjake.github.io/burger_fries_and_a_jake/images/obey_me.jpg" alt="Obey my dog!">
         <figcaption>The bozo in all his glory</figcaption>
-      </figure>
-
-      <a href="https://heathjake.github.io/burger_fries_and_a_jake/burgers_fries_and_a_jake.html" class="back-link">← Back to Reviews</a>
+      </figure>  
     </div>
-  </main>
+    <a href="https://heathjake.github.io/burger_fries_and_a_jake/index.html" class="back-link">← Back to Reviews</a>    
 </body>
 </html>

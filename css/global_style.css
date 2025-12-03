@@ -21,6 +21,7 @@ header {
 /* Make image touch edges exactly */
 .header-img {
   display: block;
+  max-width: 600px;
   width: 75%;
   height: auto;
   border: none;
@@ -142,5 +143,11 @@ a:visited {
   color: rgb(179, 1, 1);
 }
 
+@media (max-width: 600px) {
+  .header-img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
 
 
