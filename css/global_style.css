@@ -144,8 +144,12 @@ a:visited {
 }
 
 @media (max-width: 600px) {
+  header {
+    padding: 1rem 0.5rem;   /* Much smaller padding */
+  }
   .header-img {
     width: 100%;
+    max-width: 400px;       /* Now this actually matters */
   }
 }
 
